@@ -23,7 +23,7 @@ jobs:
         with:
           token: ${{ secrets.SECRET }}
           app-id: 46c8e2c6
-          platform: iOS
+          platform: ios
           build-type: development
           certificate: ios_dev
           native-config: ios_dev
