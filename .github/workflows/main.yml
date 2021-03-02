@@ -27,7 +27,7 @@ jobs:
           build-type: development
           certificate: ios_dev
           native-config: ios_dev
-          upload-artifact: IOS
+          upload-artifact: ios
           build-stack: macOS - 2020.11
           artifact-retention-days: 1
 
