@@ -1,4 +1,4 @@
-name: Vue + Capacitor 
+name: Cap v2 + Vue 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: VueCap ios
-        uses: ionic-team/appflow-build@v1.0.1
+        uses: ionic-team/appflow-build@v1
         with:
           token: ${{ secrets.SECRET }}
           app-id: 46c8e2c6
@@ -31,16 +31,16 @@ jobs:
           build-stack: macOS - 2020.11
           artifact-retention-days: 1
 
-#       - name: Report Status
-#         if: always()
-#         uses: likhith99/notify-slack-action@master
-#         with:
-#           status: ${{ job.status }}
-#           notify_when: 'failure'
-#         env:
-#           SLACK_WEBHOOK_URL: ${{ secrets.ACTION_MONITORING_SLACK }}
+      - name: Report Status
+        if: always()
+        uses: likhith99/notify-slack-action@master
+        with:
+          status: ${{ job.status }}
+          notify_when: 'failure'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.ACTION_MONITORING_SLACK }}
           
-    # 
+    
   build-web-test:
     runs-on: ubuntu-latest
     steps:
