@@ -1,13 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "vuecap",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "dist",
-  "plugins": {
-    "SplashScreen": {
-      "launchShowDuration": 0
-    }
-  },
-  "cordova": {}
+	"appId": "io.ionic.starter",
+	"appName": "vuecap",
+	"webDir": "dist",
+	"plugins": {}
 }
