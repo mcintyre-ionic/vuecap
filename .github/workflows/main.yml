@@ -28,7 +28,7 @@ jobs:
           certificate: ios_dev
           native-config: ios_dev
           upload-artifact: ios
-          build-stack: macOS - 2020.11
+          build-stack: macOS - 2021.10
           artifact-retention-days: 1
 
       - name: Report Status
